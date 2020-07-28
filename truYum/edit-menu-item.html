@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/edit-menu-item.css">
+    </head>
+    <body>
+        <div class="div">
+            <header>
+                <img src="logo.png" >
+                <a style="text-align: right;color:white;" href="menu-item-list-admin.html" >Menu</a>
+            </header>
+            <div class="article">
+                <form  action="edit-menu-item-status.html">
+                    <h1 class="text">Edit Menu Item</h1>
+                    <br><br>
+                    <label for="title" class="text1">Name</label><br>
+                    <input type="text" name="title" id="title" min="2" max="65" size="200" required><br><br>
+                    <table>
+                        <tr>
+                            <td><label for="price">Price (Rs.)</label></td>
+                            <td><label for="inStock">&nbsp;Active</label></td>   
+                            <td><label for="dateOfLaunch">Date of Launch</label></td> 
+                            <td><label for="category">Category</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="price" id="price" required></td>
+                            <td><input type="radio" id="instock" name="instock" value="yes">Yes
+                            <input type="radio" id="instock" name="instock" value="no">No</td> 
+                            <td><input type="text" name="dateOfLaunch" id="dateOfLaunch" required></td>
+                            <td>
+                                <select name="category" id="category">
+                                    <option value="Starters">Starters</option>
+                                    <option value="Main Course">Main Course</option>
+                                    <option value="Dessert">Dessert</option>
+                                    <option value="Drinks">Drinks</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="freedelivery" name="freedelivery">
+                                <label for="freedelivery">Free Delivery</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" class="button" id="admin" value="Save">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <footer>
+                Copyright&copy; 2019
+            </footer>
+        </div>
+    </body>
+</html>
